@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ Vehicle.brand }}</h1>
+    <h2>{{ Vehicle.price }}</h2>
+
+    <a href="{% url 'update' pk=Vehicle.pk %}">Обновить</a>
+    <hr>
+    <a href="{% url 'delete' pk=Vehicle.pk %}">Удалить</a>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% for Vehicle in Vehicles %}
+        <ul>
+            <li><a href="{% url 'details' pk=Vehicle.pk %}">{{ Vehicle.brand }}</a></li>
+        </ul>
+
+    {% endfor %}
+
+</body>
+</html>
